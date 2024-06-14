@@ -11,8 +11,8 @@ Run primera vez
 ```bash
 $ sudo docker run -p 8888:8888 -v /home/matias/docker_volumes/db2_analisis_datos:/home/jovyan/work --name db2_jupyter jupyter/base-notebook
 ```
-* Cambiar path al necesario
-* Abrir enlace de localhost(127.0.0.1) desde consola la primera vez para abrir con token
+* Cambiar path al necesario para volume antes de ':'.
+* Abrir enlace de localhost(127.0.0.1) desde consola la primera vez para abrir con token.
 ---
 
 De la segunda vez en adelante

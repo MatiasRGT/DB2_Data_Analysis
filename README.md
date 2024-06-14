@@ -1,23 +1,27 @@
 # Trabajo de analisis de datos para DB2 - ULS
 ---
-### Docker 
+## Docker 🐳
 
+Imagen base
 ``` bash
 $ sudo docker pull jupyter/base-notebook
 ```
 
+Run primera vez
 ```bash
 $ sudo docker run -p 8888:8888 -v /home/matias/docker_volumes/db2_analisis_datos:/home/jovyan/work --name db2_jupyter jupyter/base-notebook
 ```
 * Cambiar path al necesario
-* Abrir enlace de consola la primera vez para el token
+* Abrir enlace de localhost(127.0.0.1) desde consola la primera vez para abrir con token
+---
 
+De la segunda vez en adelante
 ``` bash
-docker start db2_jupyter
+$ sudo docker start db2_jupyter
 ```
 
 ``` bash
-docker stop db2_jupyter
+$ sudo docker stop db2_jupyter
 ```
 
 ```bash
